@@ -26,6 +26,8 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 
+gem 'action_args'
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
