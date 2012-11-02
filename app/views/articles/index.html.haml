@@ -1,0 +1,11 @@
+- @articles.each do |article|
+  .article-container
+    %article
+      .header
+        %header
+          %h3= article.title
+      .body
+        = simple_format article.body
+      .footer
+        %footer
+          %p.right= l article.published_at

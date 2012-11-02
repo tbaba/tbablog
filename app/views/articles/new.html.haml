@@ -1,0 +1,17 @@
+= form_for @article do |f|
+  - if @article.errors.any?
+    #error_explanation
+      %ul
+        - @article.errors.full_messages.each do |err|
+          %li= e
+
+  %dl
+    %dt= f.label :title
+    %dd= f.text_field :title
+
+  %dl
+    %dt= f.label :body
+    %dd= f.text_area :body
+
+  .actions
+    %nav= f.submit 'Save'
