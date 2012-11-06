@@ -13,11 +13,15 @@
     #global_nav
       %nav
         %ul.nav_list
-          %li= link_to 'About', '#'
-          %li= link_to 'Weblog', '#'
-          %li= link_to 'Twitter', '#'
-          %li= link_to 'Facebook', '#'
-          %li= link_to 'Github', '#'
+          %li
+            = link_to_unless_current 'About', '#' do
+              %span= 'About'
+          %li
+            = link_to_unless controller.is_a?(ArticlesController), 'Weblog', '#' do
+              %span= 'Weblog'
+          %li= link_to 'Twitter', 'https://twitter.com/BabaTatsuro'
+          %li= link_to 'Facebook', 'https://facebook.com/tatsuro.baba'
+          %li= link_to 'Github', 'https://github.com/tbaba'
 
     = yield
 
