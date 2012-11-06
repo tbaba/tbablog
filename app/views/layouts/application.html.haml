@@ -10,7 +10,16 @@
     #header
       %h1 Tbablog
 
+    #global_nav
+      %nav
+        %ul.nav_list
+          %li= link_to 'About', '#'
+          %li= link_to 'Weblog', '#'
+          %li= link_to 'Twitter', '#'
+          %li= link_to 'Facebook', '#'
+          %li= link_to 'Github', '#'
+
     = yield
 
     #footer
-      %p= raw "&copy; tbaba"
+      %p= raw "&copy;tbaba"
