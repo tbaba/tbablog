@@ -1,5 +1,5 @@
 @mixin deboss($c1, $c2)
-  border: 1px solid rgba(0, 0, 0, 1)
+  border: 1px $c2
   +box-shadow($c1 -1px 1px 2px inset, $c2, -1px 1px 0)
 
 @mixin border-bottom-shadow($l: .2, $s: .3)
