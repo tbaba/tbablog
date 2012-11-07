@@ -1,7 +1,7 @@
 # coding: utf-8
 class ArticlesController < ApplicationController
-  def index
-    @articles = Article.order('published_at desc').all
+  def index page
+    @articles = Article.order('published_at desc').page page
   end
 
   def new
