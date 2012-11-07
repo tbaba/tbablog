@@ -27,6 +27,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 
 gem 'action_args'
+gem 'i18n_generators'
 
 group :development, :test do
   gem 'rspec'
