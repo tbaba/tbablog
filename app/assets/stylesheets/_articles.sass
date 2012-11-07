@@ -1,0 +1,21 @@
+article
+  width: 500px
+  margin: 0 0 30px
+  .header
+    margin: 0 0 20px
+    padding: 0 0 5px
+    +border-bottom-shadow(.1, 1)
+
+    h2
+      font-size: 1.5em
+      font-weight: bold
+      a
+        color: $base-text
+        text-decoration: none
+        +transition-duration(.2s)
+        &:hover
+          color: darken($base-text, 20%)
+  .body
+    p
+      margin: 2em 0
+      line-height: 1.6

@@ -1,5 +1,8 @@
 Tbablog::Application.routes.draw do
   resources :articles
+
+  get '/about' => 'top#about'
+  root to: 'top#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
