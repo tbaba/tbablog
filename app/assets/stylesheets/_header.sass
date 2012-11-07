@@ -1,11 +1,22 @@
 #header
-  width: 200px
+  width: 224px
   font-size: 24px
   background-color: $nav-back
   margin: 0 20px 10px
-  padding: 12px
   letter-spacing: 0.1em
 
   border: 1px solid rgba(0, 0, 0, .1)
   +border-radius(4px)
   +box-shadow(rgba(0, 0, 0, .1) -1px 1px 2px inset, rgba(255, 255, 255, 1) -1px 1px 0)
+  +transition-duration(.2s)
+  &:hover
+    +border-radius(5px)
+    +box-shadow(rgba(0, 0, 0, .2) -1px 1px 2px inset, rgba(255, 255, 255, 1) -1px 1px 0)
+
+  a
+    padding: 12px
+    display: block
+    color: $base-text
+    text-decoration: none
+    &:hover
+      color: darken($base-text, 20%)

@@ -9,7 +9,7 @@
   %body
     #left-column
       #header
-        %h1 Tbablog
+        %h1= link_to 'Tbablog', root_path
 
       #global_nav
         %nav
@@ -18,7 +18,7 @@
               = link_to_unless_current 'About', '#' do
                 %span= 'About'
             %li
-              = link_to_unless controller.is_a?(ArticlesController), 'Weblog', '#' do
+              = link_to_unless controller.is_a?(ArticlesController), 'Weblog', articles_path do
                 %span= 'Weblog'
             %li= link_to 'Twitter', 'https://twitter.com/BabaTatsuro'
             %li= link_to 'Facebook', 'https://facebook.com/tatsuro.baba'
