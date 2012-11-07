@@ -29,6 +29,8 @@ gem 'haml-rails'
 gem 'action_args'
 gem 'i18n_generators'
 
+gem 'kaminari'
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
