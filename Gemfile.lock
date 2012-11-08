@@ -52,6 +52,8 @@ GEM
     domain_name (0.5.4)
       unf (~> 0.0.3)
     erubis (2.7.0)
+    everywhere (1.0.1)
+      activerecord
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.1.0)
@@ -170,6 +172,7 @@ DEPENDENCIES
   bootstrap-sass-rails
   coffee-rails (~> 3.2.1)
   compass-rails
+  everywhere
   factory_girl
   factory_girl_rails
   faker
