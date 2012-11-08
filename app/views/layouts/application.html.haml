@@ -15,7 +15,7 @@
         %nav
           %ul.nav_list
             %li
-              = link_to_unless_current 'About', '#' do
+              = link_to_unless_current 'About', about_path do
                 %span= 'About'
             %li
               = link_to_unless controller.is_a?(ArticlesController), 'Weblog', articles_path do
