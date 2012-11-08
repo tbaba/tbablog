@@ -13,5 +13,9 @@
     %dt= f.label :body
     %dd= f.text_area :body
 
+  %dl
+    %dt= f.label :publish
+    %dd= f.check_box :publish, { checked: (true if @article.published_at) }
+
   .actions
     %nav= f.submit 'Save'

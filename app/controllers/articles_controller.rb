@@ -1,11 +1,11 @@
 # coding: utf-8
 class ArticlesController < ApplicationController
   def index page
-    @articles = Article.order('published_at desc').page page
+    @articles = Article.published.order('published_at desc').page page
   end
 
   def show id
-    @article = Article.find id
+    @article = Article.published.find id
   end
 
   def new
