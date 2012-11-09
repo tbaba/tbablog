@@ -14,8 +14,8 @@
     %dd= f.text_area :body
 
   %dl
-    %dt= f.label :publish
-    %dd= f.check_box :publish, { checked: (true if @article.published_at) }
+    %dt= f.label :status
+    %dd= f.select :status, options_for_select({'公開' => 1, '非公開' => 0})
 
   .actions
     %nav= f.submit 'Save'

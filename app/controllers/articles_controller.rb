@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   end
 
   def show id
-    @article = Article.published.find id
+    @article = Article.find id
   end
 
   def new
