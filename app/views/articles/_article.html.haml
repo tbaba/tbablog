@@ -6,4 +6,7 @@
     = simple_format article.body
   .footer
     %footer
+      %p.left
+        - article.tags.each do |tagging|
+          %span.tag= tagging.name
       %p.right= l article.published_at
