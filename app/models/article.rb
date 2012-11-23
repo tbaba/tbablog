@@ -3,6 +3,8 @@ class Article < ActiveRecord::Base
 
   paginates_per 10
 
+  acts_as_taggable
+
   scope :published, where(status: 1)
 
   before_save :set_published_at
