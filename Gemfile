@@ -32,6 +32,8 @@ gem 'i18n_generators'
 gem 'kaminari'
 gem 'everywhere'
 
+gem 'acts-as-taggable-on'
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
