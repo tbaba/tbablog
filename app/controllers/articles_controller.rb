@@ -1,7 +1,9 @@
 # coding: utf-8
 class ArticlesController < ApplicationController
-  def index page
-    @articles = Article.published.order('published_at desc').page page
+  def index name, page
+    @articles = Article.published
+    @articles = @articles.tagged_with(name) if name
+    @articles = @articles.order('published_at desc').page page
   end
 
   def show id

@@ -8,5 +8,5 @@
     %footer
       %p.left
         - article.tags.each do |tagging|
-          %span.tag= tagging.name
+          %span.tag= link_to tagging.name, tagged_articles_path(name: tagging.name)
       %p.right= l article.published_at

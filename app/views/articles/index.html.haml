@@ -1,2 +1,6 @@
+- if params[:name]
+  .page-header
+    %h2= "”#{params[:name]}” に関する記事"
+
 = render @articles
 = paginate @articles

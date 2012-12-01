@@ -1,6 +1,8 @@
 Tbablog::Application.routes.draw do
   resources :articles
 
+  get '/articles/tagged/:name' => 'articles#index', as: 'tagged_articles'
+
   get '/about' => 'top#about', as: 'about'
   root to: 'top#index'
   # The priority is based upon order of creation:
